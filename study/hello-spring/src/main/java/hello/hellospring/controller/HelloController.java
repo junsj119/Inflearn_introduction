@@ -28,7 +28,7 @@ public class HelloController {
         return "hello" + name;
     }
 
-    //키 값이 왜 name?? name을 다 바꿔줘도 name으로 고정되던데 왜???
+    //키 값이 왜 name?? name을 다 바꿔줘도 name으로 고정되던데 왜??? -> getter setter 단축키로 했던거 첨부터 다시하면 바뀜
     @GetMapping("hello-api")
     @ResponseBody
     public Hello helloApi(@RequestParam("name")String name)
@@ -48,4 +48,6 @@ public class HelloController {
             this.name = name;
         }
     }
+
+
 }
